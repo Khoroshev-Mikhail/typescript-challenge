@@ -1,5 +1,3 @@
-//https://github.com/type-challenges/type-challenges/blob/main/questions/00011-easy-tuple-to-object/README.md
-
 /*
   11 - Tuple to Object
   -------
@@ -22,8 +20,8 @@
 
 /* _____________ Your Code Here _____________ */
 
-type TupleToObject<T extends readonly string[]> = {
-
+type TupleToObject<T extends readonly (string | number)[]> = {
+  [P in T[number]]: P
 }
 
 /* _____________ Test Cases _____________ */

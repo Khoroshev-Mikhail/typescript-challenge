@@ -34,7 +34,7 @@
 /* _____________ Your Code Here _____________ */
 
 type MyPick<T, K extends keyof T> = {
-    [k in K]: T[k]
+  [k in K]: T[k]
 }
   
   /* _____________ Test Cases _____________ */

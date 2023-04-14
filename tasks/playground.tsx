@@ -1,12 +1,9 @@
-interface Ara {
-    a: 'bb',
-    v: 'zz'
+//keyof возвращает массив? с ключами объекта ('z' | 'b' | 'r')
+const Ara = {
+    b: 'bb',
+    z: 'zz'
 }
-interface Bara {
-    title: 'gg'
+type Ara = {
+    [k in keyof typeof Ara] : k
 }
-
-const bara:Pick<Ara, 'a' | 'v'> = {
-    a: 'bb',
-    v: 'zz'
-}
+const bara: keyof Ara = 'z'
