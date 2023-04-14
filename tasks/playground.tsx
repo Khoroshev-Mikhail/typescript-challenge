@@ -1,1 +1,0 @@
-type Ara<T, K> = K extends number ? T : String
